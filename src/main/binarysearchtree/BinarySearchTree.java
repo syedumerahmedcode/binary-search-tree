@@ -1,5 +1,7 @@
 package main.binarysearchtree;
 
+import java.util.Iterator;
+
 public class BinarySearchTree<T extends Comparable<T>> {
 
 	// Tracks the number of nodes in this BST
@@ -196,8 +198,34 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	// This method returns an iterator for a given TreetraversalOrder
 	// There are 4 ways to traverse a tree:
 	// preorder, inorder, post order and level order
-	public java.util.Iterator<T> traverse(TreeTraversalOrder order){
-		
+	public Iterator<T> traverse(TreeTraversalOrder order){
+		switch(order) {
+			case PRE_ORDER: return preOrderTraversal();
+			case IN_ORDER: return inOrderTraversal();
+			case POST_ORDER: return postOrderTraversal();
+			case LEVEL_ORDER: return levelOrderTraversal();
+			default: return null;
+		}
+	}
+
+	private Iterator<T> levelOrderTraversal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private Iterator<T> postOrderTraversal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private Iterator<T> inOrderTraversal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private Iterator<T> preOrderTraversal() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
