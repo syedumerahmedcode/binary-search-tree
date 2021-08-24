@@ -181,18 +181,18 @@ public class BinarySearchTree<T extends Comparable<T>> {
 		}		
 	}
 	
-//	//Computes the height of the tree, O(n)
-//	public int height() {
-//		return height(root);
-//	}
-//	
-//	// Recursive helper method to calculate the height of the tree.
-//	private int height(Node node) {
-//		if(node==null) {
-//			return 0;
-//		}else {
-//			return Math.max(height(node.left), height(node.right))+1;
-//		}
-//	}
+	//Computes the height of the tree, O(n)
+	public int height() {
+		return height(root);
+	}
+	
+	// Recursive helper method to calculate the height of the tree.
+	private int height(Node node) {
+		if(node==null) {
+			return 0;
+		}else {
+			return Math.max(height(node.left), height(node.right))+1;
+		}
+	}
 
 }
