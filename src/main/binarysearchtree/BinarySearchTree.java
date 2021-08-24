@@ -1,7 +1,5 @@
 package main.binarysearchtree;
 
-import org.graalvm.compiler.nodes.calc.RightShiftNode;
-
 public class BinarySearchTree<T extends Comparable<T>> {
 
 	// Tracks the number of nodes in this BST
@@ -193,6 +191,13 @@ public class BinarySearchTree<T extends Comparable<T>> {
 		}else {
 			return Math.max(height(node.left), height(node.right))+1;
 		}
+	}
+	
+	// This method returns an iterator for a given TreetraversalOrder
+	// There are 4 ways to traverse a tree:
+	// preorder, inorder, post order and level order
+	public java.util.Iterator<T> traverse(TreeTraversalOrder order){
+		
 	}
 
 }
