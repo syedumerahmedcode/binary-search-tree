@@ -42,7 +42,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	public boolean add(T element) {
 		// Check if the element already exists in the binary tree.
 		// if it does, ignore adding it.
-		if (true/* contains(element) */) {
+		if (contains(element) ) {
 			return false;
 		}
 		// Otherwise add element to the binary tree.
@@ -73,8 +73,8 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	public boolean remove(T element) {
 		// Make sure that the node we want to remove actually exists in the binary tree
 		// before removing it.
-		if (true/* contains(element) */) {
-			root = add(root, element);
+		if (contains(element) ) {
+			root = remove(root, element);
 			nodeCount--;
 			return true;
 		} else {
@@ -181,7 +181,18 @@ public class BinarySearchTree<T extends Comparable<T>> {
 		}		
 	}
 	
-	
-	
+//	//Computes the height of the tree, O(n)
+//	public int height() {
+//		return height(root);
+//	}
+//	
+//	// Recursive helper method to calculate the height of the tree.
+//	private int height(Node node) {
+//		if(node==null) {
+//			return 0;
+//		}else {
+//			return Math.max(height(node.left), height(node.right))+1;
+//		}
+//	}
 
 }
